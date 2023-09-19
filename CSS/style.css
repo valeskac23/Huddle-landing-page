@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=Open+Sans:wght@400;600;700&display=swap');
+
+:root{
+    --Poppins:'Poppins', sans-serif;
+    --Open_Sans:'Open Sans', sans-serif;
+    --Pink: hsl(322, 100%, 66%);
+    --Light_Pink: hsl(321, 100%, 78%);
+    --Light_Red: hsl(0, 100%, 63%);
+    --very_Dark_Cyan: hsl(192, 100%, 9%);
+    --Very_Pale_Blue: hsl(207, 100%, 98%);
+
+    --padding_contanier:80px 0;
+
+}
+*{
+    margin: 0;
+    box-sizing: border-box;    
+}
+
+body{
+    font-family: var(--Open_Sans);        
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding_contanier);
+}
+
+.hero{
+    min-height: 100vh;
+    position: relative;
+    --wave-bottom: url(../img/bg-section-top-mobile-1.svg);
+}
+
+.hero-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    --padding_contanier:60px 0 45px;
+}
+
+.hero_logo{
+    width: 45%;
+    max-width: 160px;
+}
+
+.hero_huddble{
+    width: 100%;
+    display: block;
+}
+
+.hero_cta{
+    text-decoration: none;
+    color: var(--Light_Pink);
+    border: solid 2px;    
+    border-radius: 30px;
+    padding: 6px 16px;
+    font-weight: 600;
+    box-shadow: 0 0 1px;
+}
+
+/*seccion del main*/
+
+.hero__main{
+    text-align: center;
+    color: var(--very_Dark_Cyan);
+}
+.hero__title{
+    font-family: var(--Poppins);
+}
+
+.hero__parrafo{
+    width: 90%;
+    margin: 16px auto;
+    line-height: 1.5;
+}
+
+.cta{
+    display: inline-block;
+    background-color: var(--Pink);
+    color: #fff;
+    text-decoration: none;
+    padding: 16px 30px;
+    border-radius: 30px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.hero__picture{
+    margin-top: 80px;
+}
+
+.hero__img{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+}
+
+.hero__numeros{
+    display: flex;
+    margin-top: 80px;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.hero__item{
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.hero__icon{
+    display: block;
+}
+
+.hero__numero{
+    font-size: 60px;
+}
+
+.wave{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: 100% 100px;
+
+}
+
+.wave--bottom{
+    left: 0;
+    bottom: 0;
+    background-image: var(--wave-bottom);
+}
+
+.wave--top{
+    left: 0;
+    top: 0;
+    background-image: var(--wave-top);
+}
+
+.section{
+    background-color: var(--Very_Pale_Blue);
+    --padding_contanier: 110px 0; 
+}
+.section--white{
+    background-color: #fff;
+    position: relative;
+    --padding_contanier: 210px 0; 
+    --wave-top: url(../img/bg-section-bottom-mobile-1.svg);
+    --wave-bottom: url(../img/bg-section-top-mobile-2.svg);
+   
+   
+}
+
+.section__container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.section__img{
+    width: 100%;
+    max-width: 350px;
+    display: block;
+    margin: 0 auto;
+}
+
+.section__texts{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.subtitle{
+    font-family: var(--Poppins);
+    margin-bottom: 16px;
+}
+
+.pregunta{
+    position: relative;
+    text-align: center;
+    --wave-top: url(../img/bg-section-bottom-mobile-2.svg);
+    --wave-bottom: url(../img/bg-footer-top-mobile.svg);
+    --padding_contanier: 190px 0 210px;
+    
+}
+
+.footer{
+    color: #fff;
+    background-color: var(--very_Dark_Cyan);
+}
+
+.footer__title{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom:  16px;
+    font-family: var(--Poppins);
+}
+
+.footer__parrafo{
+    line-height: 1.5;
+    margin: 16 0 50px;
+}
+
+
+.footer__form{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.form__input{
+    flex-basis: 100%;
+    flex-grow: 1;
+    font-size: 16px;
+    font-family: var(--Open_Sans);
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding: 16px 6px;
+    margin-bottom: 20px;
+}
+
+.footer__cta{
+    font-size: 16px;
+    font-family: var(--Open_Sans);
+    background-color: var(--Pink);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 4px;
+    margin-left: auto;
+}
+.footer__contac{
+    line-height: 50px;
+}
+
+.footer__contac::after{
+    content: "+1-543-123-4567";
+    margin-left: 10px;
+
+}
+
+
+.footer__contac--email::after{
+    content: "example@huddle.com";
+
+}
+
+
+.footer__social{
+    display: flex;
+    gap: 16px;
+    margin-top: 30px;
+}
+
+.footer__links{
+    text-decoration: none;
+    width: 30px;
+}
+
+.footer__icon{
+    width: 100%;
+    display: block;
+}
+
+@media(min-width:760px){
+    .hero{
+        --wave-bottom: url(../img/bg-section-top-desktop-1.svg);
+    }
+
+    .hero__title{
+        font-size: 40px;
+    }
+
+    .hero__parrafo{
+        width: 70%;
+    }
+
+    .cta{
+        padding: 16px 50px;        
+    }
+
+
+    .hero__numeros{
+        justify-content: space-around;
+        flex-direction: row;        
+    }
+
+    .section__container{
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .section--white{
+        --wave-top: url(../img/bg-section-bottom-desktop-1.svg);
+        --wave-bottom: url(../img/bg-section-top-desktop-2.svg);
+   
+    }
+    .section__img{
+        width: 50%;
+    }
+
+    .section__texts{
+        width: 45%;
+        margin: 0;
+        text-align: start;
+    }
+
+    .section__container--flowing{
+        flex-direction: row; 
+    }
+
+    .pregunta{
+        --wave-top: url(../img/bg-section-bottom-desktop-2.svg);
+        --wave-bottom: url(../img/bg-footer-top-desktop.svg);
+    }
+
+    .footer__container{
+        --padding_contanier: 110px 0;
+        display: flex;   
+        justify-content: space-between;     
+    }
+
+    .footer__newsletter{
+        width: 50%;
+        max-width: 350%;
+        order: 1;
+    }
+    
+    .footer__direccion{
+        width: 50%;
+        max-width: 300px;
+    }
+
+    .footer__parrafo{
+        margin: 16 0 30px;
+    }
+
+
+}
